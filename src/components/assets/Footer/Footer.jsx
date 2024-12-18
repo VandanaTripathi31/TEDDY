@@ -24,12 +24,12 @@ const Footer = () => {
       <div className="footer-links">
         <h3 className="footer-heading">Quick Links</h3>
         <ul>
-          <li><a href="#">Our Story</a></li>
+          <li><a href="/fullstory">Our Story</a></li>
           <li><a href="#">Get a Molly Bear</a></li>
           <li><a href="#">Donations</a></li>
-          <li><a href="#">Account Login</a></li>
+          <li><a href="/my-account">Account Login</a></li>
           <li><a href="#">Branding</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
       </div>
       <hr className="footer-divider" />

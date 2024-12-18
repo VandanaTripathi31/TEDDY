@@ -1,5 +1,6 @@
-import React from 'react';
-import './Myaccount.css'; // Updated CSS file
+import React from "react";
+import "./Myaccount.css"; // Updated CSS file
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -10,11 +11,7 @@ function App() {
       {/* Login Section */}
       <div className="login-container">
         <form className="login-form">
-          <input
-            type="email"
-            placeholder="Email"
-            className="input-field"
-          />
+          <input type="email" placeholder="Email" className="input-field" />
           <input
             type="password"
             placeholder="Password"
@@ -24,7 +21,9 @@ function App() {
             <input type="checkbox" id="remember" />
             <label htmlFor="remember">Remember Me</label>
           </div>
-          <button type="submit" className="login-btn">Log In</button>
+          <button type="submit" className="login-btn">
+            Log In
+          </button>
         </form>
 
         {/* Right-Side Benefits */}
@@ -40,8 +39,14 @@ function App() {
           </ul>
 
           <div className="buttons-section">
-            <button className="create-account-btn">Create A Free Account</button>
-            <button className="forgot-password-btn">Forgot Your Password?</button>
+          <Link to = "/signup">
+          < button className="create-account-btn">
+              Create A Free Account
+            </button>
+            </Link>
+            <button className="forgot-password-btn">
+              Forgot Your Password?
+            </button>
           </div>
         </div>
       </div>

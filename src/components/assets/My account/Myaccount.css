@@ -1,168 +1,199 @@
 /* General Styling */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* Header */
-  .header {
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Brush Script MT', cursive;
-    color: #b66b8e;
-    margin-bottom: 20px;
-  }
-  
-  /* Login Container */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Brush Script MT", cursive;
+  color: #b66b8e;
+  margin-bottom: 20px;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.login-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/* Hover Effect for Login Form */
+.login-form:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Field with Shadow */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #b66b8e;
+  box-shadow: 0 0 8px rgba(182, 107, 142, 0.5);
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b66b8e;
+  border-radius: 3px;
+  background: #fff;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #b66b8e;
+  content: "✔";
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Login Button with Dashed Border */
+.login-btn {
+  width: 50%;
+  background-color: #b85cbf; /* Lavender */
+  color: #fff;
+  padding: 8px 12px;
+  border: 2px dashed #b66b8e;
+  border: 2px dashed #a45a7c;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  color: #b66b8e; /* Lavender text on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefits Section */
+.benefits-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.benefits-section h2 {
+  color: #b66b8e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.buttons-section {
+  margin-top: 20px;
+}
+
+.create-account-btn,
+.forgot-password-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.create-account-btn {
+  background-color: #d9a06f;
+  color: #fff;
+  border: 2px dashed #b66b8e; /* Dashed border */
+  border-radius: 25px;
+}
+
+.forgot-password-btn {
+  background-color: #b85cbf; /* Lavender */
+  color: #fff;
+  border: 2px dashed #b66b8e; /* Dashed border */
+  border-radius: 25px;
+}
+
+.create-account-btn:hover {
+  background-color: #c2895f;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  color: #b66b8e; /* Lavender text on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-password-btn:hover {
+  background-color: #a45a7c;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+  color: #b66b8e; /* Lavender text on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
   .login-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
   }
-  
-  .login-form {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
-  }
-  
-  /* Hover Effect for Login Form */
-  .login-form:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Input Field with Shadow */
-  .input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-size: 1rem;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .input-field:focus {
-    outline: none;
-    border-color: #b66b8e;
-    box-shadow: 0 0 8px rgba(182, 107, 142, 0.5);
-  }
-  
-  /* Remember Me Checkbox */
-  .remember-me {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 15px;
-  }
-  
-  input[type="checkbox"] {
-    display: none;
-  }
-  
-  input[type="checkbox"] + label::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #b66b8e;
-    border-radius: 3px;
-    background: #fff;
-    margin-right: 8px;
-    cursor: pointer;
-  }
-  
-  input[type="checkbox"]:checked + label::before {
-    background-color: #b66b8e;
-    content: "✔";
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    line-height: 18px;
-  }
-  
-  /* Login Button with Dashed Border */
-  .login-btn {
-    width: 50%;
-    background-color: #b66b8e;
-    color: #fff;
-    padding: 8px 12px;
-    border: 2px dashed #a45a7c;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #a45a7c;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Benefits Section */
-  .benefits-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .benefits-section h2 {
-    color: #b66b8e;
-    margin-bottom: 15px;
-  }
-  
+
   .benefits-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.8;
+    grid-template-columns: 1fr; /* Single column layout */
   }
-  
-  .buttons-section {
-    margin-top: 20px;
+
+  .header {
+    font-size: 2rem;
   }
-  
+
+  .login-btn,
   .create-account-btn,
   .forgot-password-btn {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 8px;
   }
-  
-  .create-account-btn {
-    background-color: #d9a06f;
-    color: #fff;
-  }
-  
-  .forgot-password-btn {
-    background-color: #b66b8e;
-    color: #fff;
-  }
-  
-  .create-account-btn:hover {
-    background-color: #c2895f;
-  }
-  
-  .forgot-password-btn:hover {
-    background-color: #a45a7c;
-  }
-  
-
+}
