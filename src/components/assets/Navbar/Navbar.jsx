@@ -116,9 +116,10 @@ const Navbar = () => {
             onMouseEnter={() => setDropdownContact(true)}
             onMouseLeave={() => setDropdownContact(false)}
           >
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
             {dropdownContact && (
               <div className="dropdown-menu">
+                <Link to = "/contact">
                 <ul>
                   <li>
                     <FontAwesomeIcon
@@ -142,6 +143,7 @@ const Navbar = () => {
                     Locations
                   </li>
                 </ul>
+                </Link>
               </div>
             )}
           </li>
