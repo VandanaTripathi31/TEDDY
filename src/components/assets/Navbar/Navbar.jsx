@@ -4,6 +4,7 @@ import { faFacebookF, faInstagram, faTiktok } from "@fortawesome/free-brands-svg
 import { faShoppingBag, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.jpg"; // Replace with your logo path
 
 const Navbar = () => {
@@ -22,7 +23,9 @@ const Navbar = () => {
       <nav className="navbar">
         {/* Logo */}
         <div className="navbar-logo">
-          <img src={logo} alt="Logo" className="logo" />
+          <Link to="/">
+        <img src={logo} alt="Logo" className="logo" />
+        </Link>
         </div>
 
         {/* Navigation Links */}
@@ -32,7 +35,7 @@ const Navbar = () => {
             onMouseEnter={() => setDropdownStory(true)} 
             onMouseLeave={() => setDropdownStory(false)}
           >
-            <a href="#our-story">Our Story</a>
+            <a href="/fullstory">Our Story</a>
             {dropdownStory && (
               <div className="dropdown-menu">
                 <ul>
