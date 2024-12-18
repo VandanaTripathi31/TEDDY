@@ -1,65 +1,65 @@
-import React from "react";
-import "./Footer.css"; // Link to a CSS file or Tailwind for styles
+import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      {/* Cloud design */}
-      <div className="clouds"></div>
-      
-      <div className="footer-content">
-        <h2 className="logo">
-          <span>Molly</span> Bears
-        </h2>
-        <p>
-          Welcome to our Molly Bears Family. We are saddened over the loss of
-          each precious child and strive to bring hope and healing.
+    <footer className="footer-container">
+      {/* Logo and Welcome Message */}
+      <div className="footer-logo">
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeqwnDlBICcYHp3Fx14w5YY-S14P5xlloWYA&s" 
+          alt="Logo" 
+          className="footer-logo-image" 
+        />
+        <p className="footer-text">
+          Welcome to our Molly Bears Family. We are saddened over the loss of each precious child and strive to bring hope and healing.
         </p>
-        {/* Footer Sections */}
+        <p className="footer-text">
+          We create weighted teddy bears for families coping with any form of infant loss. We'll be here for you, we know you'll be here for us too.
+        </p>
       </div>
-      <div className="footer-sections">
-        <div className="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>Our Story</li>
-            <li>Get a Molly Bear</li>
-            <li>Donations</li>
-            <li>Account Login</li>
-            <li>Branding</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
+      <hr className="footer-divider" />
 
-        <div className="donations">
-          <h3>Donations</h3>
-          <p>PO Box 61998</p>
-          <p>Virginia Beach, VA 23466</p>
-        </div>
-
-        <div className="mailing-address">
-          <h3>Mailing Address</h3>
-          <p>868 Hopwood Lane</p>
-          <p>Virginia Beach, VA 23455</p>
-        </div>
-
-        <div className="follow-us">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="#">YouTube</a>
-          </div>
-          <button className="account-btn">My Account</button>
-        </div>
+      {/* Quick Links */}
+      <div className="footer-links">
+        <h3 className="footer-heading">Quick Links</h3>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Get a Molly Bear</a></li>
+          <li><a href="#">Donations</a></li>
+          <li><a href="#">Account Login</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
+      <hr className="footer-divider" />
 
-      <div className="footer-bottom">
-        <p>Copyright © 2024 Molly Bears | All Rights Reserved</p>
-        <div className="links">
-          <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a> |{" "}
-          <a href="#">Terms & Conditions</a>
+      {/* Donations */}
+      <div className="footer-donations">
+        <h3 className="footer-heading">Donations</h3>
+        <p className="footer-text">PO Box 61998</p>
+        <p className="footer-text">Virginia Beach, VA 23466</p>
+      </div>
+      <hr className="footer-divider" />
+
+      {/* Mailing Address */}
+      <div className="footer-address">
+        <h3 className="footer-heading">Mailing Address</h3>
+        <p className="footer-text">868 Hopwood Lane</p>
+        <p className="footer-text">Virginia Beach, VA 23455</p>
+      </div>
+      <hr className="footer-divider" />
+
+      {/* Social Media */}
+      <div className="footer-social">
+        <h3 className="footer-heading">Follow Us</h3>
+        <div className="social-icons">
+          <a href="#"><i className="fab fa-facebook"></i></a>
+          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#"><i className="fab fa-tiktok"></i></a>
+          <a href="#"><i className="fab fa-youtube"></i></a>
         </div>
+        <button className="account-button">My Account</button>
       </div>
     </footer>
   );

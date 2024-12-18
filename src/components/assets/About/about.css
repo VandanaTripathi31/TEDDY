@@ -1,96 +1,109 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f3f3;
-  }
-  
-  /* Header Styling */
-  .about-header {
-    background-color: #6a1b9a;
-    padding: 10px 0;
-    color: white;
+/* About.css */
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+
+.about-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .about-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .about-header nav ul li {
-    margin: 0 15px;
-  }
-  
-  .about-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Main Content Styling */
-  .about-main {
-    padding: 20px;
-  }
-  
-  .about-introduction, .about-mission {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-introduction h1, .about-mission h2 {
-    color: #6a1b9a;
-  }
-  
-  .about-images {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .about-images .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .about-images img {
-    width: 200px;
+    width: 100%;
+}
+
+.about-image img {
+    max-width: 100%;
+    width: 500px;
     height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    text-align: center; /* Center-align content */
+}
+
+.about-heading {
+    font-size: 3rem;
+    color: #7B4ABC; /* Lavender color */
+    margin-bottom: 20px;
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    font-weight: 400;
+}
+
+/* Centered Button Styling */
+.read-more-btn {
+    display: inline-flex; /* Align icon and text properly */
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Center the button */
+    padding: 12px 20px;
+    background-color: #7B4ABC; /* Lavender background */
+    border: 2px solid #7B4ABC; /* Border for transparency effect */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Footer Styling */
-  .about-footer {
-    text-align: center;
-    background-color: #6a1b9a;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-header nav ul {
-      flex-direction: column;
-      align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Add a hover effect for transparency */
+.read-more-btn:hover {
+    background-color: transparent; /* Transparent background */
+    color: #7B4ABC; /* Change text to lavender */
+    opacity: 0.8; /* Slight transparency effect */
+}
+
+.read-more-btn i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Text Styling */
+.about-text p {
+    font-size: 1.2rem;
+    color: #666; /* Default color */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Preserve original style for "At Molly..." section */
+.at-molly-connection p {
+    font-size: 1.2rem;
+    color: #444; /* Default color for this section */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Keeping the original font style */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
     }
-  
-    .about-images .image-gallery {
-      flex-direction: column;
+
+    .about-image img {
+        width: 80%;
     }
-  
-    .about-images img {
-      width: 100%;
-      max-width: 400px;
+
+    .about-text {
+        width: 100%;
     }
-  }
-  
+
+    .about-heading {
+        font-size: 2.5rem;
+    }
+
+    .read-more-btn {
+        margin: 10px auto;
+    }
+}

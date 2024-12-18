@@ -1,0 +1,312 @@
+/* Page Container */
+.fullstory-page {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive; /* Apply requested fonts */
+    color: #333;
+    line-height: 1.8;
+    background-color: #fff;
+}
+
+.fullstory-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.story-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.story-title {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive;
+    font-size: 2.5rem;
+    color: #b74199;
+}
+
+/* Default layout for larger screens */
+.main-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    gap: 20px; /* Spacing between image and text */
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .text-section {
+    flex: 2;
+  }
+  
+  /* Circular image styling */
+  .circular-image {
+    width: 200px; /* Set a fixed width */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image fits properly */
+  }
+  
+  /* Responsive layout for small screens */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align text */
+    }
+  
+    .text-section {
+      margin-top: 20px; /* Add spacing between image and text */
+    }
+  
+    .breadcrumb {
+      font-size: 0.9rem; /* Adjust breadcrumb size */
+    }
+  }
+  
+/* Default layout for larger screens */
+.main-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    gap: 20px; /* Spacing between image and text */
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .text-section {
+    flex: 2;
+  }
+  
+  /* Circular image styling */
+  .circular-image {
+    width: 200px; /* Set a fixed width */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image fits properly */
+  }
+  
+  /* Responsive layout for small screens */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center align text */
+    }
+  
+    .text-section {
+      margin-top: 20px; /* Add spacing between image and text */
+    }
+  
+    .breadcrumb {
+      font-size: 0.9rem; /* Adjust breadcrumb size */
+    }
+  }
+  
+.read-more-button {
+    background-color: #b74199;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .read-more-button:hover {
+    background-color: #9b59b6;
+  }
+  
+
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #b74199;
+}
+
+.breadcrumb span {
+    color: #555;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.image-section .circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px dotted #b74199;
+}
+
+.text-section {
+    max-width: 700px;
+}
+
+.story-author {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive;
+    font-size: 2rem;
+    color: #7B4ABC; /* Bridget Crews color */
+}
+
+.story-subtitle {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.story-extended {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Highlighted Section */
+.highlight-section {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.highlight-section h3 {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive;
+    font-size: 1.8rem;
+    color: #b74199;
+}
+
+.highlight-number {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive;
+    font-size: 3rem;
+    color: #b74199;
+}
+
+.highlight-image {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Highlight Section Below Statistics */
+.molly-highlight-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.highlight-title {
+    font-family: "Lucida Calligraphy", "Edwardian Script ITC", "Zapfino", "Monotype Corsiva", cursive;
+    font-size: 2rem;
+    color: #8c4d9d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.highlight-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-text {
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+/* Statistics Section */
+.stats-section {
+    background-color: #9b59b6; /* Lavender Purple background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%; /* Full width */
+}
+
+.stats-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff; /* White text for the title */
+}
+
+.stats-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats-section li {
+    background-color: #ffffff; /* White background for each stat */
+    color: #555; /* Text color */
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.stats-section li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+.stats-note {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #fff; /* White text for the note */
+}
+
+/* Signature */
+.signature {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    color: #fff; /* Bridget Crews color */
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .highlight-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .highlight-text {
+        text-align: center;
+    }
+}

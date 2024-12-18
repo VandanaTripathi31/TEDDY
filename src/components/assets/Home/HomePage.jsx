@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css'; // External CSS for styling
 import kidsImage from '../images/home.png.webp'; // Replace with your image path
-import Shoppage from '../Shop/Shoppage'
+import About from '../About/About';
 
 const HomePage = () => {
     return (
@@ -27,7 +27,7 @@ const HomePage = () => {
                     </p>
                 </div>
             </div>
-            <Shoppage/>
+            <About/>
 
         </div>
         
