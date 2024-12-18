@@ -1,0 +1,140 @@
+/* General Styles */
+.process-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .process-title {
+    font-size: 2.5rem;
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    color: #9A68D4;
+    margin-bottom: 10px;
+  }
+  
+  .process-subtitle {
+    font-size: 1.8rem;
+    color: #5c2d61;
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    margin-bottom: 40px;
+  }
+  
+  /* Steps Wrapper */
+  .steps-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .steps-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    border-top: 2px dashed #d3b8e4;
+    z-index: 0;
+  }
+  
+  /* Step Container */
+  .step {
+    text-align: center;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .step:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .circle {
+    width: 70px;
+    height: 70px;
+    background-color: #f9f6ff;
+    border: 3px solid #9A68D4;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .circle:hover {
+    background-color: #e5a663; /* Orange highlight */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e5a663;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 5px 8px;
+  }
+  
+  .step-icon {
+    color: #5c2d61;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+  }
+  
+  .circle:hover .step-icon {
+    color: #fff; /* White icon on hover */
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #777;
+    transition: color 0.3s;
+  }
+  
+  .step:hover p {
+    color: #5c2d61; /* Purple on hover */
+  }
+  
+  /* Delivery Text Animation */
+  .delivery-text {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #5c2d61;
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    font-weight: bold;
+    display: inline-block;
+    animation: pulse 2s infinite ease-in-out;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .delivery-text:hover {
+    transform: scale(1.1) rotate(-3deg); /* Slight tilt and zoom */
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

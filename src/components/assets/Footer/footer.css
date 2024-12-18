@@ -9,6 +9,37 @@
   font-family: Arial, sans-serif;
 }
 
+/* Footer Text Styling */
+.footer-text, 
+.footer-link, 
+.footer-links ul li, 
+.footer-donations p {
+  font-size: 0.9rem;
+  color: #6E5033; /* Consistent text color */
+  line-height: 1.5;
+}
+
+/* Quick Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6E5033;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
 /* Footer Logo Image */
 .footer-logo-image {
   width: 200px;
@@ -22,10 +53,20 @@
 /* Common Small Text Styling */
 .footer-text {
   font-size: 0.9rem;
-  color: #6E5033; /* Adjusted text color */
+  color: #6E5033;
   text-align: center;
   margin: 0.5rem 0;
   line-height: 1.5;
+}
+
+/* Quick Links Styling */
+.footer-link {
+  color: #6E5033;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 /* Heading Styles for Footer Sections */
@@ -57,26 +98,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Quick Links */
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #6a3c50;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
 }
 
 /* Social Icons */
@@ -115,4 +136,4 @@
   .footer-social .social-icons a {
     margin: 0 0.5rem;
   }
-}
+} 

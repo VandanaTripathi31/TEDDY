@@ -1,0 +1,112 @@
+/* General Styles */
+/* Shop Wrapper */
+.shop-container {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #6E5033; /* Keeps the content area white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 100%; /* Restrict width */
+  }
+  
+  .shop-title {
+    font-size: 2.5rem;
+    color: #fff; /* Soft purple */
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    margin-bottom: 20px;
+  }
+  
+  /* Shop Items Grid */
+  .shop-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .shop-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    width: 250px; /* Adjusted width for smaller item */
+    height: 350px; /* Adjusted height for smaller item */
+    display: flex;
+    flex-direction: column; /* Ensure the items are stacked vertically */
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .shop-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shop-image-container {
+    width: 100%; /* Full width */
+    height: 70%; /* 70% of the shop-item's height for the image */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .shop-image {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #7B4ABC; /* Lavender color */
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    margin: 10px 0;
+    padding-top: 10px;
+  }
+  
+  /* Updated Price Text Style */
+  .shop-item-price {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .shop-item-price p {
+    color: black; /* Lavender color */
+    font-family: 'Lucida Calligraphy', 'Edwardian Script ITC', 'Zapfino', 'Monotype Corsiva', cursive; /* Apply requested fonts */
+    font-size: 1.1rem; /* Slightly increased font size for price */
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  /* View All Button */
+  .shop-footer {
+    margin-top: 30px;
+  }
+  
+  .view-products-btn {
+    background-color: #884f1a;
+    color: white;
+    border: 2px dashed #fff; /* Dashed white border */
+    font-size: 1rem;
+    border-radius: 25px;
+    width: 250px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-products-btn:hover {
+    background-color: #ad5730;
+    transform: scale(1.05);
+  }
+  

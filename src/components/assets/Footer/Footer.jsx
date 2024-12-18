@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -59,7 +60,10 @@ const Footer = () => {
           <a href="#"><i className="fab fa-tiktok"></i></a>
           <a href="#"><i className="fab fa-youtube"></i></a>
         </div>
-        <button className="account-button">My Account</button>
+        <Link to="/my-account" >
+        <button className="account-button"
+        >
+          My Account</button></Link>
       </div>
     </footer>
   );

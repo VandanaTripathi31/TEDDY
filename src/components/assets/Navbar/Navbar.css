@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,155 +9,182 @@ body {
   background-color: #5c2d61; /* Lavender background for the entire body */
 }
 
-
-/* Navbar Container with margin */
+/* Navbar Container with Margin */
 .navbar-container {
-    margin: 30px 50px; /* Adds space on top, left, and right */
-    background-color: #fff; /* White background for navbar content */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */ /* Add space from top, left, and right */
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white; /* White background */
-    padding: 15px 20px;
-    border: 2px dashed #d3d3d3; /* Dashed border */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Logo Section */
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 50px; /* Bigger logo size */
-    margin-right: 10px;
-  }
-  
-  .brand-text {
-    font-size: 1.5rem;
-    font-family: "Playfair Display", serif;
-    color: black;
-    font-weight: bold;
-  }
-  
-  /* Navigation Links */
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 25px; /* Space between links */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-  
-  .navbar-links a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Right Section: My Account and Icons */
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Space between icons and My Account */
-  }
-  
-  /* My Account Button */
-  .my-account-btn {
-    background-color: #e676a8; /* Pink background */
-    border: 2px dashed #d3d3d3;
-    color: white;
-    padding: 8px 15px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  .my-account-btn:hover {
-    background-color: white;
-    color: #e676a8;
-  }
-  
-  .profile-icon {
-    color: white;
-  }
-  
-  .my-account-btn:hover .profile-icon {
-    color: #e676a8;
-  }
-  
-  /* Social Media and Icons */
-  .icons {
-    display: flex;
-    gap: 15px; /* Space between icons */
-  }
-  
-  .icon {
-    color: black; /* Icons clearly visible on white background */
-    font-size: 1.6rem; /* Larger icons */
-    transition: color 0.3s ease;
-  }
-  
-  .icon:hover {
-    color: #e676a8; /* Pink hover effect */
-  }
+  margin: 30px 50px; /* Adds space on top, left, and right */
+  background-color: #fff; /* White background for navbar content */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+}
 
-  .icons:hover {
-    color: #e676a8;
-  }
-  
-  /* Dropdown Parent - Relative Positioning */
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* White background */
+  padding: 15px 20px;
+  border: 2px dashed #d3d3d3; /* Dashed border */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Bigger logo size */
+  margin-right: 10px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  color: black;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Right Section: My Account and Icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons and My Account */
+}
+
+/* My Account Button */
+.my-account-btn {
+  background-color: #e676a8; /* Pink background */
+  border: 2px dashed #d3d3d3;
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.my-account-btn:hover {
+  background-color: white;
+  color: #e676a8;
+}
+
+.profile-icon {
+  color: white;
+}
+
+.my-account-btn:hover .profile-icon {
+  color: #e676a8;
+}
+
+/* Social Media and Icons */
+.icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.icon {
+  color: black; /* Icons clearly visible on white background */
+  font-size: 1.6rem; /* Larger icons */
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #e676a8; /* Pink hover effect */
+}
+
+.icons:hover {
+  color: #e676a8;
+}
+
+/* Dropdown Parent - Relative Positioning */
+/* Dropdown Parent - Relative Positioning */
+/* Dropdown Parent - Relative Positioning */
 .dropdown-parent {
   position: relative;
   display: inline-block;
 }
 
 /* Dropdown Menu Container */
+/* Dropdown Menu Container */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #5c2d61; /* Lavender background */
-  border-radius: 8px;
-  border: 2px dashed #fff; /* Dashed border */
-  width: 200px;
+  background-color: #5c2d61; /* Updated background color */
+  border-radius: 6px; /* Slightly smaller border radius */
+  border: 2px dashed white; /* Inside border */
+  padding: 5px; /* Padding to keep content away from border */
+  width: 180px; /* Slightly narrower dropdown */
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Hidden by default */
+  box-sizing: border-box; /* Include border and padding in the element's total width and height */
+}
+
+/* Show Dropdown on Hover */
+.dropdown-parent:hover .dropdown-menu {
+  display: block;
 }
 
 /* Dropdown Menu Items */
 .dropdown-menu ul {
   list-style: none;
   margin: 0;
-  padding: 10px 0;
+  padding: 4px 0; /* Compact padding */
 }
 
 .dropdown-menu li {
-  color: #fff; /* White text */
-  padding: 10px 15px;
-  font-size: 0.9rem;
+  color: white; /* White text */
+  padding: 6px 8px; /* Smaller padding for compact design */
+  font-size: 0.8rem; /* Smaller text size */
+  font-family: 'Arial', sans-serif; /* Updated font family */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.dropdown-icon {
+  margin-right: 8px;
+  font-size: 1rem;
+  color: white;
 }
 
+
+
 .dropdown-menu li:hover {
-  background-color: #7d3c98; /* Slightly darker lavender */
+  background-color: #9A68D4; /* Slightly lighter purple on hover */
+  transform: translateX(3px); /* Subtle hover animation */
 }
+
+/* Ensure dropdown stays inside the container */
+.navbar-links {
+  position: relative;
+  z-index: 1;
+}
+
+
