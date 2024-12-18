@@ -1,88 +1,100 @@
+/* Footer Styling */
 .footer {
-  position: relative;
-  background-color: #fefaf1; /* Light cream */
-  color: #4a2c2a;
-  padding-top: 60px; /* Space for the clouds */
-}
-
-.clouds {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: #8b6f48; /* Brown color matching your image */
-  border-radius: 100% / 40px;
-  box-shadow: 
-    -30px -20px 0 10px #8b6f48,
-    30px -20px 0 10px #8b6f48,
-    60px 10px 0 20px #8b6f48,
-    -60px 10px 0 20px #8b6f48;
-}
-
-
-.footer {
-  background-color: #fefaf1; /* Light cream background */
-  color: #4a2c2a; /* Dark brown text */
-  padding: 20px 40px;
-  font-family: Arial, sans-serif;
-}
-
-.footer-header h2 {
-  font-size: 24px;
-  color: #a060b0; /* Purple logo text */
-  margin-bottom: 10px;
-}
-
-.footer-sections {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-sections h3 {
-  color: #a060b0;
-  margin-bottom: 10px;
-}
-
-.footer-sections ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-sections li {
-  margin: 5px 0;
-}
-
-.footer-text,
-.footer-subtext {
-  max-width: 500px;
-  margin-bottom: 20px;
-}
-
-.social-icons a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #4a2c2a;
-  text-decoration: none;
-}
-
-.account-btn {
-  background-color: #a060b0;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-bottom a {
-  color: #4a2c2a;
-  text-decoration: none;
-}
+    background-color: #0c0e12; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Left Section: Company Description */
+  .left-section {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .footer-logo img {
+    width: 80px; /* Larger logo */
+    margin-bottom: 10px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f39c12; /* Attractive gold color */
+  }
+  
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dcdcdc;
+  }
+  
+  /* Center Section: Links */
+  .center-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    color: #f39c12; /* Gold hover effect */
+  }
+  
+  /* Right Section: Follow Us */
+  .right-section {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    color: #ccc;
+  }
+  

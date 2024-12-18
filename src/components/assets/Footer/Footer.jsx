@@ -1,65 +1,52 @@
 import React from "react";
-import "./Footer.css"; // Link to a CSS file or Tailwind for styles
+import { Link } from "react-router-dom";
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import logo from "../images/Teddy.logo.webp";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Cloud design */}
-      <div className="clouds"></div>
-      
-      <div className="footer-content">
-        <h2 className="logo">
-          <span>Molly</span> Bears
-        </h2>
-        <p>
-          Welcome to our Molly Bears Family. We are saddened over the loss of
-          each precious child and strive to bring hope and healing.
-        </p>
-        {/* Footer Sections */}
-      </div>
-      <div className="footer-sections">
-        <div className="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li>Our Story</li>
-            <li>Get a Molly Bear</li>
-            <li>Donations</li>
-            <li>Account Login</li>
-            <li>Branding</li>
-            <li>Contact Us</li>
+      <div className="footer-container">
+        {/* Left Section: Company Description */}
+        <div className="footer-section left-section">
+          <div className="footer-logo">
+            <img src={logo} alt="Teddy Dreams Logo" />
+          </div>
+          <h3 className="footer-title">TeddyDreams</h3>
+          <p className="footer-description">
+            Bringing joy and comfort through our carefully curated collection of teddy bears and soft toys.
+          </p>
+        </div>
+
+        {/* Center Section: Navigation Links */}
+        <div className="footer-section center-section">
+          <h3 className="footer-title">Quick Links</h3>
+          <ul className="footer-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Shoppage">Shop</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/login">Log In</Link></li>
+            <li><Link to="/signup">Sign Up</Link></li>
+            <li><Link to="/order-tracking">Order Tracking</Link></li>
           </ul>
         </div>
 
-        <div className="donations">
-          <h3>Donations</h3>
-          <p>PO Box 61998</p>
-          <p>Virginia Beach, VA 23466</p>
-        </div>
-
-        <div className="mailing-address">
-          <h3>Mailing Address</h3>
-          <p>868 Hopwood Lane</p>
-          <p>Virginia Beach, VA 23455</p>
-        </div>
-
-        <div className="follow-us">
-          <h3>Follow Us</h3>
+        {/* Right Section: Follow Us */}
+        <div className="footer-section right-section">
+          <h3 className="footer-title">Follow Us</h3>
           <div className="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="#">YouTube</a>
+            <a href="#facebook" className="icon"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="#twitter" className="icon"><FontAwesomeIcon icon={faTwitter} /></a>
+            <a href="#instagram" className="icon"><FontAwesomeIcon icon={faInstagram} /></a>
           </div>
-          <button className="account-btn">My Account</button>
         </div>
       </div>
 
+      {/* Bottom Section */}
       <div className="footer-bottom">
-        <p>Copyright © 2024 Molly Bears | All Rights Reserved</p>
-        <div className="links">
-          <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a> |{" "}
-          <a href="#">Terms & Conditions</a>
-        </div>
+        <p>© 2024 TeddyDreams. All rights reserved.</p>
       </div>
     </footer>
   );
